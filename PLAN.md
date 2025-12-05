@@ -222,6 +222,55 @@
 
 ---
 
+## Completed Work (Session: 2025-12-05)
+
+### 1. Vercel Deployment - ✅ COMPLETED
+
+**Deployment Setup:**
+- Deployed to Vercel via GitHub integration
+- Live URL: `https://pulse-ai-w44h.vercel.app/`
+- Auto-deploys on push to `main` branch
+
+**Environment Variables Configured:**
+- `NEXT_PUBLIC_SUPABASE_URL`: `https://xprhcpkjyhhhuwvgwsam.supabase.co`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Supabase anon JWT key
+
+### 2. Deployment Bug Fixes - ✅ COMPLETED
+
+**Bug 1: "Unexpected end of JSON input" on Signup**
+- **Problem:** User entered wrong Supabase URL (dashboard URL instead of API URL)
+- **Fix:** Changed from `https://supabase.com/dashboard/project/...` to `https://xprhcpkjyhhhuwvgwsam.supabase.co`
+
+**Bug 2: Redirect to localhost after signup**
+- **Problem:** Supabase "Site URL" was set to `http://localhost:3000`
+- **Fix:** Updated Supabase Auth → URL Configuration → Site URL to `https://pulse-ai-w44h.vercel.app`
+
+**Bug 3: Redirect URLs not configured**
+- **Fix:** Added `https://pulse-ai-w44h.vercel.app/**` to Supabase Redirect URLs
+
+### 3. Landing Page Improvements - ✅ COMPLETED
+
+**Sticky Header:**
+- Made navbar fixed at top when scrolling
+- Added `fixed top-0 left-0 right-0 z-50` to Navbar component
+- Added padding wrapper to prevent content overlap
+
+**Smooth Scroll Navigation:**
+- Added `id="about"` to TrainingPreviewSection
+- Added `id="features"` to TrainAnywhereSection
+- Added `scroll-behavior: smooth` to globals.css
+- "About" link scrolls to TrainingPreviewSection
+- "Features" link scrolls to TrainAnywhereSection
+
+**Files Modified:**
+- `src/components/Navbar.tsx` - Fixed positioning
+- `src/components/landing/TrainingPreviewSection.tsx` - Added section ID
+- `src/components/landing/TrainAnywhereSection.tsx` - Added section ID
+- `src/app/globals.css` - Smooth scroll behavior
+- `src/app/page.tsx` - Padding wrapper for fixed header
+
+---
+
 ## Current Development Status
 
 **COMPLETED:**
@@ -237,10 +286,13 @@
 - ✅ Reset Training Plan (DELETE RLS Policies)
 - ✅ AI Chat Interface (Phase 3)
 - ✅ Dashboard Data Refresh Bug (Chat Actions)
+- ✅ Vercel Deployment (Production Live)
+- ✅ Landing Page (Sticky Header + Smooth Scroll)
 
 **UP NEXT:**
 - 🔜 Deploy AI Chat Fixes (Bug 3)
 - 🔜 Polish & Testing (Mobile Responsiveness)
+- 🔜 Custom Domain Setup (Optional)
 
 ---
 
@@ -259,4 +311,4 @@
 
 ---
 
-*Last updated: 2025-12-04 (Session 5 - Dashboard Refresh Bug Fixed)*
+*Last updated: 2025-12-05 (Session 6 - Vercel Deployment & Landing Page Improvements)*

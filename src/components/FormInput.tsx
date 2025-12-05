@@ -19,7 +19,7 @@ export default function FormInput({
       </label>
       <input
         {...props}
-        className={`w-full max-w-[390px] h-[50px] px-[17px] py-[15px] border-none rounded-[15px] bg-white font-sans text-sm font-normal tracking-[-0.1em] text-black placeholder:text-gray-500 placeholder:opacity-100 ${className}`}
+        className={`w-full max-w-[390px] h-[50px] px-[17px] py-[15px] border-none rounded-[15px] bg-white font-sans text-sm font-normal tracking-normal text-black placeholder:text-gray-500 placeholder:opacity-100 ${className}`}
       />
     </div>
   );

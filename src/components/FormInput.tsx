@@ -6,6 +6,7 @@ interface FormInputProps {
   placeholder?: string;
   value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  required?: boolean;
 }
 
 export default function FormInput({
@@ -16,6 +17,7 @@ export default function FormInput({
   placeholder,
   value,
   onChange,
+  required,
 }: FormInputProps) {
   return (
     <div className="flex flex-col items-center">
@@ -32,6 +34,7 @@ export default function FormInput({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
+        required={required}
         className="w-full max-w-[390px] h-[50px] px-[17px] py-[15px] border-none rounded-[15px] bg-white font-sans text-sm font-normal tracking-[-0.1em] text-black placeholder:text-gray-500 placeholder:opacity-100"
       />
     </div>

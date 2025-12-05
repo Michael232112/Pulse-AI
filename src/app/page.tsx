@@ -8,10 +8,12 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <HeroSection />
-      <TrainingPreviewSection />
-      <TrainAnywhereSection />
-      <Footer />
+      <div className="pt-[115px] max-md:pt-[140px]">
+        <HeroSection />
+        <TrainingPreviewSection />
+        <TrainAnywhereSection />
+        <Footer />
+      </div>
     </>
   );
 }

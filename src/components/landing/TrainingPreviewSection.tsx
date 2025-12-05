@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function TrainingPreviewSection() {
   return (
-    <section className="bg-beige py-[100px] pb-[120px] relative">
+    <section id="about" className="bg-beige py-[100px] pb-[120px] relative">
       <div className="max-w-[1440px] mx-auto px-[60px] max-lg:px-10 max-md:px-5">
         <div className="relative z-[1] grid grid-cols-[1fr_1.2fr] gap-[100px] items-center max-lg:grid-cols-1 max-lg:gap-10">
           <div>

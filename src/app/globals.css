@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme inline {
   /* Pulse AI Custom Colors */
   --color-primary: #FFA200;

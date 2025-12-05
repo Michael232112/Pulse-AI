@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 
 export default function TrainAnywhereSection() {
   return (
-    <section className="bg-beige py-[100px] pb-[120px]">
+    <section id="features" className="bg-beige py-[100px] pb-[120px]">
       <div className="max-w-[1440px] mx-auto px-[60px] max-lg:px-10 max-md:px-5">
         <div className="grid grid-cols-2 gap-[100px] items-start max-lg:grid-cols-1 max-lg:gap-10">
           <div>

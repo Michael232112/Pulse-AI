@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Pulse</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="signup-page">
+    <a href="login.html" class="back-link">Back</a>
+    <div class="signup-container">
+        <!-- Left Side: Image and Heading -->
+        <div class="signup-left">
+            <img src="assets/images/runner-ekiden.png" alt="Runner" class="signup-image">
+            <h1 class="signup-heading">Start Your Truly Personal Plan</h1>
+        </div>
+
+        <!-- Right Side: Form -->
+        <div class="signup-right">
+            <div class="signup-logo">pulse.</div>
+
+            <form class="signup-form">
+                <!-- Form Grid -->
+                <div class="form-grid">
+                    <!-- Left Column -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="justinnabunturan@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Justin Nabunturan">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="**************">
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" id="age" name="age" placeholder="30">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="height">Height</label>
+                            <input type="text" id="height" name="height" placeholder="160cm">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="weight">Weight</label>
+                            <input type="text" id="weight" name="weight" placeholder="55kg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign Up Button -->
+                <button type="submit" class="btn btn-signup">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
